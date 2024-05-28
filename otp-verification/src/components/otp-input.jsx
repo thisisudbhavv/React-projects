@@ -25,6 +25,7 @@ const OtpInput = ({length, onOtpSubmit = () => { }}) => {
                     <input 
                         key={index}
                         type="text"
+                        ref = {(input) => {inputRefs.current[index] = input}}
                         value={value}
                         onChange={(e) => handleChange(index, e)}
                         onClick={() => handleClick(index)}

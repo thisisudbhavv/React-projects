@@ -22,8 +22,8 @@ const PhoneOtpForm = () => {
         setShowOtpField(true);
     }
 
-    const onOtpSubmit = () => {
-        console.log("Success");
+    const onOtpSubmit = (otp) => {
+        console.log("Success", otp);
     }
 
     return <div>
@@ -32,7 +32,7 @@ const PhoneOtpForm = () => {
             onChange={handlePhoneNumber}
             placeholder="Enter phone number"/>
 
-            <button type="submit" onClick={handlePhoneSubmit}>Send OTP</button>
+            <button type="submit" onClick={handlePhoneSubmit} >Send OTP</button>
         </form> : <div>
             <p>Enter OTP sent to {phoneNumber}</p>
             <OtpInput length={4} onOtpSubmit={onOtpSubmit}/>

@@ -3,7 +3,7 @@ export const RevenueCard = ({ title, orderCount, amount }) => {
     <div className="bg-white rounded shadow-md p-4">
       <div className="text-gray-500 text-base pb-2 flex">
         <div>{title}</div>
-        <div className="flex justify-center flex-col">
+        <div className="flex justify-center flex-col ml-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -21,7 +21,7 @@ export const RevenueCard = ({ title, orderCount, amount }) => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="text-gray-900 text-2xl font-bold ">$ {amount}</div>
+        <div className="text-gray-900 text-2xl font-bold ">${amount}</div>
         {orderCount ? (
           <div className="flex cursor-pointer font-medium flex-col justify-center">
             <div className="flex">

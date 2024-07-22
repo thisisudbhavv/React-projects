@@ -1,6 +1,6 @@
 export const RevenueCard = ({ title, orderCount, amount }) => {
   return (
-    <div className="bg-white rounded shadow-md p-4">
+    <div className="bg-white rounded shadow-md p-4 hover:bg-blue-200">
       <div className="text-gray-500 text-base pb-2 flex">
         <div>{title}</div>
         <div className="flex justify-center flex-col ml-1">
